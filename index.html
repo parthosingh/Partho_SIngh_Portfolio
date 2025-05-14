@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partho-Singh-Portfolio</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding: 10rem;
+        }
+
+        #header {
+            width: 100vw;
+            height: 80px;
+            background-color: #001d3d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 30px;
+            position: fixed;
+            top: 0px;
+            z-index: 20;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0px 18px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        #name {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 34px;
+            padding-left: 36px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 5px 5px;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+
+        li a:hover {
+            color: #f95738;
+        }
+
+        #click {
+            display: none;
+        }
+
+        #formatname {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media all and (min-width:940px) and (max-width:1192px) {
+            ul li {
+                margin: 0px 13px;
+            }
+
+            li a {
+                font-size: 18px;
+            }
+
+            #name {
+                font-size: 27px;
+                padding-left: 25px;
+            }
+
+
+        }
+
+        #cross {
+            font-size: 30px;
+        }
+
+        @media all and (min-width:400px) and (max-width:939px) {
+            #ulone {
+                position: fixed;
+                top: 80px;
+                left: -200%;
+                background-color: #778da9;
+                height: 100vh;
+                width: 100vw;
+                display: block;
+                text-align: center;
+                transition: all 0.4s ease;
+            }
+
+
+            #name {
+                font-size: 25px;
+                padding-left: 16px;
+            }
+
+            #ulone li {
+                margin: 45px 0px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+
+        @media all and (min-width:0px) and (max-width:399px) {
+            #ulone {
+                position: fixed;
+                top: 80px;
+                left: -200%;
+                background-color: #778da9;
+                height: 100vh;
+                width: 100vw;
+                display: block;
+                text-align: center;
+                transition: all 0.4s ease;
+            }
+
+
+            #name {
+                font-size: 23px;
+                padding-left: 0px;
+            }
+
+            #ulone li {
+                margin: 45px 0px;
+            }
+
+            .hamburger {
+                display: block;
+                font-size: 21px;
+            }
+
+            #header {
+                padding: 0px 20px;
+            }
+        }
+
+        .none {
+            display: none;
+        }
+
+
+
+
+        #mainone {
+            width: 96vw;
+            margin: auto;
+            display: flex;
+            margin-top: 86px;
+        }
+
+        #leftmainone {
+            width: 55%;
+        }
+
+
+        #leftoneimg {
+            width: 70%;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        #allp {
+            padding-top: 100px;
+            padding-left: 76px;
+            padding-bottom: 60px;
+        }
+
+        #firstp {
+            font-family: 'Maven Pro', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #secondp {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 43px;
+        }
+
+        #thirdp {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 38px;
+        }
+
+        span {
+            color: #1d3557;
+        }
+
+        #leftmainbutton {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            padding: 8px 20px;
+            font-size: 18px;
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 26px;
+            cursor: pointer;
+        }
+
+        #leftmainbutton a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #leftmainbutton:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #rightmainone {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #maintwo {
+            width: 96vw;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #rightmainonediv {
+            width: 410px;
+            height: 406px;
+            border: 1px solid #d9d9d9;
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+            animation: rotate 55s linear infinite;
+            margin-bottom: 100px;
+        }
+
+        #lookfixed {
+            width: 294px;
+            height: 290px;
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1e4ff;
+        }
+
+        #reverserotate {
+            width: 175px;
+            height: 170px;
+            border-radius: 200px;
+            background-color: white;
+        }
+
+
+        .techimage {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        #techimage1 {
+            transform: translate(63px, -142px)
+        }
+
+
+        #techimage2 {
+            transform: translate(63px, 202px)
+        }
+
+        #techimage3 {
+            transform: translate(-136px, -85px);
+        }
+
+        #techimage4 {
+            transform: translate(263px, -144px);
+        }
+
+        #techimage5 {
+            transform: translate(62px, -265px);
+            z-index: 10;
+        }
+
+        #techimage6 {
+            transform: translate(69px, -151px);
+        }
+
+        #techimage7 {
+            transform: translate(-26px, -281px);
+        }
+
+        #techimage8 {
+            transform: translate(146px, -348px)
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #techimage1 img {
+            width: 64px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage2 img {
+            width: 44px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage3 img {
+            width: 32px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage4 img {
+            width: 43px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage5 img {
+            width: 43px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage6 img {
+            width: 37px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage7 img {
+            width: 53px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        #techimage8 img {
+            width: 38px;
+            animation: rotate 55s linear infinite reverse;
+        }
+
+        .techimage2 {
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #mainthree {
+            width: 96vw;
+            margin: auto;
+            display: flex;
+            padding: 15px 0px;
+        }
+
+        #maintwoh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        #mainthreeh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        #mainthreeimage {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #insideone {
+            width: 50%;
+        }
+
+        #insideone img {
+            width: 100%;
+        }
+
+
+        #maininsideone {
+            width: 45%;
+        }
+
+        #maininsideone img {
+            width: 100%;
+        }
+
+
+        #mainthreedesc {
+            width: 60%;
+            padding-top: 16px;
+        }
+
+        #mainthreedesch2 {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-size: 32px;
+            margin-top: 15px;
+        }
+
+        #mainthreedescp {
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 18px;
+            padding-right: 50px;
+            margin-top: 7px;
+        }
+
+
+        #overviewh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 120px;
+        }
+
+        #overview {
+            width: 96%;
+            margin: auto;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .childoverview {
+            width: 28%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            padding: 25px 0px;
+        }
+
+        .childoverview:hover {
+            background-color: #edede9;
+        }
+
+        .overviewdiv {
+            width: 64%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #frontendimg {
+            width: 26%;
+            display: block;
+            margin: auto;
+        }
+
+        .descoverview1 {
+            font-family: 'Maven Pro', sans-serif;
+            font-size: 22px;
+            margin-top: 12px;
+        }
+
+        .descoverview2 {
+            font-family: 'Maven Pro', sans-serif;
+            margin-top: 14px;
+            font-size: 16px;
+        }
+
+        #descoverviewextra {
+            font-family: 'Maven Pro', sans-serif;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        #techstackh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 85px;
+        }
+
+        #techstack {
+            width: 96vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 50px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+
+        .smallteachcom {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        .smallteachcom:hover {
+            background-color: #edede9;
+        }
+
+        .insidesmalltech {
+            width: 72%;
+        }
+
+        .insidesmalltechdesc {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-size: 22px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #maintechimage1 {
+            width: 67%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage2 {
+            width: 46%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage3 {
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage4 {
+            width: 48%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage5 {
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage6 {
+            width: 42%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage7 {
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage8 {
+            width: 44%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage9 {
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage10 {
+            width: 43%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage11 {
+            width: 40%;
+            display: block;
+            margin: auto;
+        }
+
+        #maintechimage12 {
+            width: 61%;
+            display: block;
+            margin: auto;
+        }
+
+        #techh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 95px;
+        }
+
+        #techskills {
+            width: 96vw;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .smalltechskills {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            cursor: pointer;
+            padding-top: 15px;
+        }
+
+        .smalltechskills:hover {
+            background-color: #edede9;
+        }
+
+
+        .insidesmalltechskills {
+            width: 40%;
+        }
+
+        #techskillimg1 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg2 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg3 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg4 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg5 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg6 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg7 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        #techskillimg8 {
+            width: 64%;
+            display: block;
+            margin: auto;
+        }
+
+        .techskillsdesc {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #projecth2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 99px;
+            margin-bottom: 40px;
+        }
+
+        #projectsec {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 85vw;
+            margin: auto;
+        }
+
+        .swiper {
+            width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #d9d9d9;
+            width: 30%;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .swiper-slide:hover {
+            background-color: #edede9;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        .swiperh2 {
+            font-family: 'Poppins', sans-serif;
+            margin: 10px;
+        }
+
+        .swiperdesc {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 0px 14px;
+            margin: 23px 0px;
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .changebutton {
+            padding: 11px 12px;
+            border: none;
+            outline: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            background-color: white;
+            border: 1px solid black;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .swiper-button-next {
+            background: black;
+            color: white;
+            width: 55px;
+            height: 54px;
+            border-radius: 45px;
+        }
+
+        .swiper-button-next:after {
+            font-size: 20px;
+        }
+
+        .swiper-button-prev {
+            background: black;
+            color: white;
+            width: 55px;
+            height: 54px;
+            border-radius: 45px;
+            position: absolute;
+            right: 15px;
+        }
+
+        .swiper-button-prev:after {
+            font-size: 20px;
+        }
+
+        #statsh2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 95px;
+            margin-bottom: 20px;
+        }
+
+        #statsofgit {
+            width: 96%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .stat {
+            width: 30%;
+            cursor: pointer;
+        }
+
+        .stat img {
+            width: 100%;
+        }
+
+        #contribugit {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 85px;
+        }
+
+        #contribudiv {
+            width: 77%;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #contribudiv img {
+            width: 100%;
+        }
+
+        #contacth2 {
+            color: #1d3557;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            text-align: center;
+            font-size: 38px;
+            margin-top: 85px;
+        }
+
+        #contactdiv {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .childcon {
+            width: 22%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+            flex-direction: column;
+        }
+
+        .childcon:hover {
+            background-color: #edede9;
+            cursor: pointer;
+        }
+
+        .outerimage {
+            width: 36%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outerimage i {
+            font-size: 48px;
+        }
+
+        .socialdesc {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            margin-top: 5px;
+            font-size: 22px;
+        }
+
+        #footer {
+            margin-top: 150px;
+            width: 100vw;
+            background-color: #1d3557;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        #footer:hover {
+            background-color: #2e4c79;
+        }
+
+        #footerdesc {
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100vw;
+            text-align: center;
+        }
+
+        #policyandterms {
+            display: flex;
+            width: 94vw;
+            justify-content: space-between;
+        }
+
+        #policyandterms p {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 10px 0px;
+            font-size: 15px;
+            margin-left: 120px;
+            cursor: pointer;
+
+        }
+
+        #slidetotop {
+            position: fixed;
+            width: 59px;
+            height: 59px;
+            bottom: 25px;
+            right: 35px;
+            border: 1px solid black;
+            z-index: 10;
+            border-radius: 198px;
+            visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 26px;
+            background-color: red;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+
+        @media all and (min-width:970px) and (max-width:1214px) {
+            #maininsideone {
+                width: 46%;
+            }
+
+            #firstp {
+                font-size: 18px;
+            }
+
+            #secondp {
+                font-size: 36px;
+            }
+
+            #thirdp {
+                font-size: 26px;
+            }
+
+            #leftmainbutton {
+                padding: 6px 15px;
+                font-size: 13px;
+            }
+        }
+
+
+        @media all and (min-width:862px) and (max-width:969px) {
+            #maininsideone {
+                width: 48%;
+            }
+
+            #firstp {
+                font-size: 24px;
+            }
+
+            #secondp {
+                font-size: 43px;
+            }
+
+            #thirdp {
+                font-size: 33px;
+            }
+
+            #leftmainbutton {
+                padding: 6px 15px;
+                font-size: 13px;
+            }
+
+            #mainone {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            #leftmainone {
+                width: 100%;
+                text-align: center;
+            }
+
+            #rightmainone {
+                width: 60%;
+            }
+
+            #leftmainbutton {
+                padding: 8px 20px;
+                font-size: 18px;
+            }
+
+            #allp {
+                padding-left: 0px;
+            }
+
+        }
+
+        @media all and (min-width:580px) and (max-width:861px) {
+            #maininsideone {
+                width: 48%;
+            }
+
+            #firstp {
+                font-size: 20px;
+            }
+
+            #secondp {
+                font-size: 37px;
+            }
+
+            #thirdp {
+                font-size: 28px;
+            }
+
+            #leftmainbutton {
+                padding: 4px 12px;
+                font-size: 11px;
+            }
+
+            #mainone {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            #leftmainone {
+                width: 100%;
+                text-align: center;
+            }
+
+            #rightmainone {
+                width: 445px;
+            }
+
+            #leftmainbutton {
+                padding: 8px 20px;
+                font-size: 18px;
+            }
+
+            #allp {
+                padding-left: 0px;
+                padding-top: 30px;
+            }
+
+        }
+
+
+        @media all and (min-width:418px) and (max-width:579px) {
+            #maininsideone {
+                width: 66%;
+            }
+
+            #firstp {
+                font-size: 18px;
+            }
+
+            #secondp {
+                font-size: 29px;
+            }
+
+            #thirdp {
+                font-size: 24px;
+            }
+
+            #leftmainbutton {
+                padding: 5px 14px;
+                font-size: 14px;
+            }
+
+
+            #mainone {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            #leftmainone {
+                width: 100%;
+                text-align: center;
+            }
+
+            #rightmainone {
+                width: 272px;
+            }
+
+            #allp {
+                padding-left: 0px;
+                padding-top: 30px;
+            }
+
+        }
+
+
+        @media all and (min-width:0px) and (max-width:417px) {
+            #maininsideone {
+                width: 66%;
+            }
+
+            #firstp {
+                font-size: 18px;
+            }
+
+            #secondp {
+                font-size: 29px;
+            }
+
+            #thirdp {
+                font-size: 18px;
+            }
+
+            #leftmainbutton {
+                padding: 5px 14px;
+                font-size: 14px;
+            }
+
+            #mainone {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            #leftmainone {
+                width: 100%;
+                text-align: center;
+            }
+
+            #rightmainone {
+                width: 200px;
+            }
+
+
+            #allp {
+                padding-left: 0px;
+                padding-top: 30px;
+            }
+
+        }
+
+
+        @media all and (min-width:500px) and (max-width:574px) {
+            #maintwoh2 {
+                font-size: 32px;
+            }
+
+            #rightmainonediv {
+                width: 270px;
+                height: 270px;
+            }
+
+            #lookfixed {
+                width: 214px;
+                height: 214px;
+            }
+
+            #reverserotate {
+                width: 81px;
+                height: 81px;
+            }
+
+            .techimage {
+                width: 30px;
+                height: 42px;
+            }
+
+            #techimage1 {
+                transform: translate(26px, -116px);
+            }
+
+            #techimage2 {
+                transform: translate(32px, 113px);
+            }
+
+            #techimage3 {
+                transform: translate(-109px, -70px);
+            }
+
+            #techimage4 {
+                transform: translate(160px, -114px);
+            }
+
+            #techimage5 {
+                transform: translate(43px, -160px);
+                z-index: 10;
+            }
+
+            #techimage6 {
+                transform: translate(12px, -179px);
+            }
+
+            #techimage8 {
+                transform: translate(14px, -375px);
+            }
+        }
+
+        @media all and (min-width:376px) and (max-width:499px) {
+            #maintwoh2 {
+                font-size: 32px;
+            }
+
+            #rightmainonediv {
+                width: 200px;
+                height: 200px;
+            }
+
+            #lookfixed {
+                width: 170px;
+                height: 170px;
+            }
+
+            #reverserotate {
+                width: 81px;
+                height: 81px;
+            }
+
+            .techimage {
+                width: 30px;
+                height: 42px;
+            }
+
+            #techimage1 {
+                transform: translate(26px, -80px);
+            }
+
+            #techimage2 {
+                transform: translate(32px, 80px);
+            }
+
+            #techimage3 {
+                transform: translate(-74px, -70px);
+            }
+
+            #techimage4 {
+                transform: translate(121px, -114px);
+            }
+
+            #techimage5 {
+                transform: translate(43px, -160px);
+                z-index: 10;
+            }
+
+            #techimage6 {
+                transform: translate(12px, -179px);
+            }
+
+            #techimage8 {
+                transform: translate(14px, -375px);
+            }
+
+            .techimage {
+                background-color: transparent;
+            }
+        }
+
+
+
+        @media all and (min-width:0px) and (max-width:375px) {
+            #maintwoh2 {
+                font-size: 32px;
+            }
+
+            #rightmainonediv {
+                width: 160px;
+                height: 160px;
+            }
+
+            #lookfixed {
+                width: 110px;
+                height: 110px;
+            }
+
+            #reverserotate {
+                width: 50px;
+                height: 50px;
+            }
+
+            .techimage {
+                width: 30px;
+                height: 42px;
+            }
+
+            #techimage1 {
+                transform: translate(14px, -75px);
+            }
+
+            #techimage2 {
+                transform: translate(16px, 41px);
+            }
+
+            #techimage3 {
+                transform: translate(-70px, -72px);
+            }
+
+            #techimage4 {
+                transform: translate(89px, -119px);
+
+            }
+
+            #techimage5 {
+                transform: translate(18px, -173px);
+                z-index: 10;
+            }
+
+            #techimage6 {
+                transform: translate(-1px, -208px);
+
+            }
+
+            #techimage7 {
+                transform: translate(-26px, -289px)
+            }
+
+            #techimage8 {
+                transform: translate(-2px, -377px);
+
+            }
+
+            #rightmainonediv {
+                margin-top: 25px;
+                margin-bottom: 55px;
+            }
+
+            .techimage {
+                background-color: transparent;
+            }
+
+            #techimage1 img {
+                width: 51px;
+            }
+
+            #techimage2 img {
+                width: 36px;
+            }
+
+            #techimage3 img {
+                width: 26px;
+            }
+
+            #techimage4 img {
+                width: 33px;
+            }
+
+            #techimage5 img {
+                width: 32px;
+            }
+
+            #techimage6 img {
+                width: 29px;
+            }
+
+            #techimage7 img {
+                width: 41px;
+            }
+
+            #techimage8 img {
+                width: 28px;
+            }
+
+            #maintwoh2 {
+                font-size: 26px;
+            }
+        }
+
+        @media all and (min-width:980px) and (max-width:1080px) {
+            #insideone {
+                width: 56%;
+            }
+
+            #mainthreedesch2 {
+                font-size: 27px;
+            }
+
+            #mainthreedescp {
+                font-size: 16px;
+            }
+        }
+
+        @media all and (min-width:460px) and (max-width:979px) {
+            #insideone {
+                width: 56%;
+            }
+
+            #mainthreedesch2 {
+                font-size: 27px;
+            }
+
+            #mainthreedescp {
+                font-size: 16px;
+                text-align: center;
+                padding-right: 0px;
+
+            }
+
+            #mainthree {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mainthreeimage {
+                width: 375px;
+            }
+
+            #mainthreedesc {
+                width: 84%;
+            }
+        }
+
+        @media all and (min-width:356px) and (max-width:459px) {
+
+            #insideone {
+                width: 56%;
+            }
+
+            #mainthreedescp {
+                font-size: 16px;
+                text-align: center;
+                padding-right: 0px;
+
+            }
+
+            #mainthree {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mainthreeimage {
+                width: 350px;
+            }
+
+            #mainthreedesc {
+                width: 84%;
+            }
+
+            #mainthreedesch2 {
+                font-size: 22px;
+            }
+        }
+
+
+        @media all and (min-width:0px) and (max-width:355px) {
+
+            #insideone {
+                width: 56%;
+            }
+
+            #mainthreedescp {
+                font-size: 14px;
+                text-align: center;
+                padding-right: 0px;
+
+            }
+
+            #mainthree {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mainthreeimage {
+                width: 240px;
+            }
+
+            #mainthreedesc {
+                width: 84%;
+            }
+
+            #mainthreedesch2 {
+                font-size: 22px;
+            }
+
+            #mainthreeh2 {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:1028px) and (max-width:1268px) {
+            #frontendimg {
+                width: 60px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 18px;
+            }
+
+            .descoverview2 {
+                font-size: 15px;
+            }
+
+            #descoverviewextra {
+                font-size: 15px;
+            }
+        }
+
+
+        @media all and (min-width:746px) and (max-width:1027px) {
+
+            #frontendimg {
+                width: 50px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 15px;
+            }
+
+            .descoverview2 {
+                font-size: 13px;
+            }
+
+            #descoverviewextra {
+                font-size: 13px;
+            }
+        }
+
+        @media all and (min-width:664px) and (max-width:745px) {
+            #frontendimg {
+                width: 48px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 13px;
+            }
+
+            .descoverview2 {
+                font-size: 12px;
+            }
+
+            #descoverviewextra {
+                font-size: 12px;
+            }
+
+        }
+
+        @media all and (min-width:450px) and (max-width:663px) {
+            #frontendimg {
+                width: 70px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 20px;
+            }
+
+            .descoverview2 {
+                font-size: 17px;
+            }
+
+            #descoverviewextra {
+                font-size: 17px;
+            }
+
+            #overviewh2 {
+                margin-top: 20px;
+            }
+
+            #overview {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .childoverview {
+                width: 65%;
+                margin-top: 26px;
+            }
+
+        }
+
+
+        @media all and (min-width:352px) and (max-width:449px) {
+
+            #frontendimg {
+                width: 60px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 18px;
+            }
+
+            .descoverview2 {
+                font-size: 15px;
+            }
+
+            #descoverviewextra {
+                font-size: 15px;
+            }
+
+            #overview {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .childoverview {
+                width: 65%;
+                margin-top: 26px;
+            }
+
+        }
+
+        @media all and (min-width:0px) and (max-width:351px) {
+            #frontendimg {
+                width: 60px;
+            }
+
+            .overviewdiv {
+                width: 100%;
+            }
+
+            .descoverview1 {
+                font-size: 14px;
+            }
+
+            .descoverview2 {
+                font-size: 12px;
+            }
+
+            #descoverviewextra {
+                font-size: 12px;
+            }
+
+            #overview {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .childoverview {
+                width: 80%;
+                margin-top: 26px;
+            }
+
+            #overviewh2 {
+                margin-top: 0px;
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:766px) and (max-width:1186px) {
+            #techstack {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+
+        @media all and (min-width:570px) and (max-width:765px) {
+            #techstack {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            .insidesmalltechdesc {
+                font-size: 16px;
+            }
+
+        }
+
+        @media all and (min-width:300px) and (max-width:569px) {
+            #techstack {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .insidesmalltechdesc {
+                font-size: 16px;
+            }
+
+            #maintechimage1 {
+                width: 70%;
+            }
+
+            #maintechimage2 {
+                width: 48%;
+            }
+
+            #techstack {
+                padding: 0px 20px;
+            }
+
+            #techstackh2 {
+                font-size: 28px;
+                margin-top: 0px;
+            }
+
+        }
+
+
+        @media all and (min-width:0px) and (max-width:299px) {
+            #techstack {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+            }
+
+            .insidesmalltechdesc {
+                font-size: 16px;
+            }
+
+            #maintechimage1 {
+                width: 47%;
+            }
+
+            #maintechimage2 {
+                width: 32%;
+            }
+
+            #maintechimage3 {
+                width: 41%;
+            }
+
+            #maintechimage4 {
+                width: 34%;
+            }
+
+            #maintechimage5 {
+                width: 40%;
+            }
+
+            #maintechimage6 {
+                width: 28%;
+            }
+
+            #maintechimage7 {
+                width: 44%;
+            }
+
+            #maintechimage8 {
+                width: 28%;
+            }
+
+            #maintechimage9 {
+                width: 40%;
+            }
+
+            #maintechimage10 {
+                width: 29%;
+            }
+
+            #maintechimage11 {
+                width: 26%;
+            }
+
+            #maintechimage12 {
+                width: 37%;
+            }
+
+            #techstack {
+                padding: 0px 20px;
+            }
+
+            #techstackh2 {
+                font-size: 28px;
+                margin-top: 0px;
+            }
+
+        }
+
+
+        @media all and (min-width:728px) and (max-width:850px) {
+
+            #techskills {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .techskillsdesc {
+                font-size: 14px;
+            }
+
+        }
+
+        @media all and (min-width:500px) and (max-width:727px) {
+            #techskills {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .techskillsdesc {
+                font-size: 14px !important;
+            }
+        }
+
+        @media all and (min-width:300px) and (max-width:499px) {
+            #techskills {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .techskillsdesc {
+                font-size: 12px !important;
+            }
+
+            #techh2 {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:299px) {
+            #techskills {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .techskillsdesc {
+                font-size: 12px !important;
+            }
+
+            #techh2 {
+                font-size: 28px;
+            }
+
+            #techskillimg1 {
+                width: 42%
+            }
+
+            #techskillimg2 {
+                width: 50%
+            }
+
+            #techskillimg3 {
+                width: 50%
+            }
+
+            #techskillimg4 {
+                width: 50%
+            }
+
+            #techskillimg5 {
+                width: 50%
+            }
+
+            #techskillimg6 {
+                width: 50%
+            }
+
+            #techskillimg7 {
+                width: 55%;
+            }
+
+            #techh2 {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:715px) and (max-width:1318px) {
+
+            .swiperh2 {
+                font-size: 20px;
+            }
+
+            .swiperdesc {
+                font-size: 14px;
+            }
+
+
+            .changebutton {
+                font-size: 12px;
+            }
+        }
+
+        @media all and (min-width:506px) and (max-width:714px) {
+            .swiperh2 {
+                font-size: 20px;
+            }
+
+            .swiperdesc {
+                font-size: 14px;
+            }
+
+
+
+            .changebutton {
+                font-size: 12px;
+            }
+
+            .swiper {
+                width: 67%;
+            }
+        }
+
+        @media all and (min-width:360px) and (max-width:505px) {
+            .swiperh2 {
+                font-size: 20px;
+            }
+
+            .swiperdesc {
+                font-size: 14px;
+            }
+
+            .changebutton {
+                font-size: 12px;
+            }
+
+            .swiper {
+                width: 93%;
+            }
+
+            #projecth2 {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:359px) {
+            .swiperh2 {
+                font-size: 17px;
+            }
+
+            .swiperdesc {
+                font-size: 12px;
+            }
+
+            .changebutton {
+                font-size: 10px;
+            }
+
+            .swiper {
+                width: 93%;
+            }
+
+            #projecth2 {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:662px) and (max-width:890px) {
+
+            #statsofgit {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .stat {
+                width: 46% !important;
+            }
+
+        }
+
+        @media all and (min-width:446px) and (max-width:661px) {
+
+            #statsofgit {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .stat {
+                width: 60% !important;
+            }
+
+            #statsh2 {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:445px) {
+            #statsofgit {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .stat {
+                width: 90% !important;
+            }
+
+            #statsh2 {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+
+        }
+
+        @media all and (min-width:570px) and (max-width:580px) {
+            #contribugit {
+                font-size: 28px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:569px) {
+            #contribugit {
+                font-size: 28px;
+                margin-top: 46px;
+            }
+
+            #contribudiv {
+                width: 99%;
+            }
+        }
+
+        @media all and (min-width:560px) and (max-width:844px) {
+            .outerimage i {
+                font-size: 35px;
+            }
+
+            .socialdesc {
+                font-size: 18px;
+            }
+
+        }
+
+        @media all and (min-width:446px) and (max-width:559px) {
+
+            .outerimage i {
+                font-size: 27px;
+            }
+
+            .socialdesc {
+                font-size: 13px;
+            }
+
+            #contacth2 {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:445px) {
+            .outerimage i {
+                font-size: 32px;
+            }
+
+            .socialdesc {
+                font-size: 13px;
+            }
+
+            #contactdiv {
+                width: 98%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .childcon {
+                margin-top: 25px;
+                width: 66%;
+            }
+
+            #contacth2 {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+        }
+
+        @media all and (min-width:682px) and (max-width:762px) {
+
+            #policyandterms p {
+                font-size: 12px;
+            }
+
+            #footerdesc {
+                font-size: 15px;
+            }
+        }
+
+        @media all and (min-width:0px) and (max-width:681px) {
+
+            #policyandterms p {
+                font-size: 12px;
+                margin-left: 0px;
+            }
+
+            #footerdesc {
+                font-size: 13px;
+            }
+
+            #policyandterms {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #footer {
+                margin-top: 60px;
+            }
+        }
+
+        @media all and (min-width:400px) and (max-width:681px) {
+            #slidetotop {
+                font-size: 22px;
+                width: 45px;
+                height: 45px;
+            }
+
+        }
+
+        @media all and (min-width:0px) and (max-width:399px) {
+
+            #slidetotop {
+                font-size: 18px;
+                width: 42px;
+                height: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section starts from here -->
+
+    <div id="header">
+        <div id="name"><a id="formatname" href="#">Partho Singh</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="hamburger">
+            <i id="ham" class="fa-solid fa-bars" onclick="hamone()"></i>
+            <i id="cross" class="fa-solid fa-xmark none" onclick="crossone()"></i>
+        </label>
+        <ul id="ulone">
+            <li><a href="#" onclick="getlost1()">Home</a></li>
+            <li><a href="#aboutsection" onclick="getlost2()">About</a></li>
+            <li><a href="#techskillssection" onclick="getlost3()">Skills</a></li>
+            <li><a href="#projectsection" onclick="getlost4()">Projects</a></li>
+            <li><a href="#contactsection" onclick="getlost5()">Contact</a></li>
+            <li><a href="Partho_Singh_Resume.pdf" download onclick="resumeNavigate()">Resume</a></li>
+        </ul>
+
+    </div>
+
+    <!-- main section starts from here  -->
+
+    <div id="mainone">
+        <div id="leftmainone">
+            <div id="allp">
+                <p id="firstp">Hi,There!</p>
+                <h1 id="secondp">I'm Partho Singh</h1>
+                <p id="thirdp">And I'm a <span id="element"></span></p>
+                <button id="leftmainbutton"><a href="Partho_Singh_Resume.pdf" download
+                        onclick="resumeNavigate()">Resume</a></button>
+            </div>
+
+        </div>
+
+        <div id="rightmainone">
+            <div id="maininsideone">
+                <img src="IMG_3742-modified.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- masai journey section starts from here -->
+
+    <h2 id="maintwoh2">Masai Journey</h2>
+    <div id="maintwo">
+        <div id="rightmainonediv">
+            <div id="lookfixed">
+                <div id="reverserotate">
+
+                    <div class="techimage" id="techimage1"><img src="https://clipground.com/images/html-logo-png-3.png"
+                            alt="">
+                    </div>
+                    <div class="techimage" id="techimage2"><img
+                            src="https://cdn.iconscout.com/icon/free/png-512/css-118-569410.png" alt="">
+                    </div>
+                    <div class="techimage" id="techimage3"><img
+                            src="https://th.bing.com/th/id/OIP.9jAkFPGpe5YO-8RM0Le_XgHaIa?rs=1&pid=ImgDetMain" alt="">
+                    </div>
+                    <div class="techimage" id="techimage4"><img
+                            src="https://th.bing.com/th/id/R.f81a6f373c244b1f70f4b7402b5ab372?rik=rbXh4ieLuKt%2bmA&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f09%2fReact_logo_logotype_emblem.png&ehk=QhGOkKcUKCU7FBQgHOajOiJqJBACUTD2Ni6LsfqzCEA%3d&risl=&pid=ImgRaw&r=0"
+                            alt="">
+                    </div>
+
+
+                    <div class="techimage2" id="techimage5"><img
+                            src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png" alt="">
+                    </div>
+
+                    <div class="techimage2" id="techimage6"><img
+                            src="https://icon-library.com/images/nodejs-icon/nodejs-icon-1.jpg" alt="">
+                    </div>
+
+                    <div class="techimage2" id="techimage7"><img
+                            src="https://th.bing.com/th/id/R.785df5444d71022977e06196da29aec0?rik=jKknldU%2fOo83DQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fmongodb-png--770.png&ehk=1Ecjmlu5gnco8zY32mwOvjePZII%2buwaOdTJnSCGntZ4%3d&risl=&pid=ImgRaw&r=0"
+                            alt="">
+                    </div>
+
+                    <div class="techimage2" id="techimage8"><img
+                            src="https://img.icons8.com/?size=100&id=jD-fJzVguBmw&format=png&color=000000" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- about section starts from here -->
+
+    <div id="aboutsection">
+
+        <h2 id="mainthreeh2">About me</h2>
+        <div id="mainthree">
+
+            <div id="mainthreeimage">
+
+                <div id="insideone">
+                    <img src="IMG_3742 (1)-modified.png" alt="">
+                </div>
+
+            </div>
+
+
+            <div id="mainthreedesc">
+                <h2 id="mainthreedesch2">I'm Partho Singh and I'm a <span id="element2"></span></h2>
+
+                <p id="mainthreedescp">Results-driven Full Stack Web Developer with expertise in C, C++, HTML, CSS,
+                    JavaScript, and the MERN Stack. A quick learner dedicated to professional development, excelling in
+                    collaborative environments and creating visually stunning websites aligned with clients' objectives.
+                    Meticulous about timelines, delivering high-quality solutions promptly. Passionate about crafting
+                    user-friendly interfaces, actively seeking skill enhancement.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- skills overview section starts from here -->
+
+    <h2 id="overviewh2">Skills Overview</h2>
+    <div id="overview">
+        <div class="childoverview">
+            <div class="overviewdiv">
+                <img id="frontendimg" src="frontend.png" alt="">
+                <p class="descoverview1">Front-End</p>
+                <p class="descoverview2">HTML,CSS,Javascipt,React</p>
+            </div>
+        </div>
+
+
+        <div class="childoverview">
+            <div class="overviewdiv">
+                <img id="frontendimg" src="backend.png" alt="">
+                <p class="descoverview1">Back-End</p>
+                <p class="descoverview2">Node JS,Express JS,Mongo DB</p>
+            </div>
+        </div>
+        <div class="childoverview">
+
+            <div class="overviewdiv">
+                <img id="frontendimg" src="dsa.png" alt="">
+                <p class="descoverview1">DSA</p>
+                <p class="descoverview2">String,Array,Loop,Function,</p>
+                <p id="descoverviewextra">Object,Sorting Algo (Python)</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- techskils section starts from here -->
+    <div id="techskillssection">
+
+        <h2 id="techstackh2">Techstack</h2>
+
+        <div id="techstack">
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage1" src="https://clipground.com/images/html-logo-png-3.png" alt="">
+                    <p class="insidesmalltechdesc">HTML</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage2" src="https://icon-library.com/images/css3-icon/css3-icon-28.jpg" alt="">
+                    <p class="insidesmalltechdesc">CSS</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage3"
+                        src="https://freepngdesign.com/content/uploads/images/javascript-logo-7539.png" alt="">
+                    <p class="insidesmalltechdesc">Javascript</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage4" src="https://egenteas.sirv.com/exato/project/react_icon.png" alt="">
+                    <p class="insidesmalltechdesc">React</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage5" src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-icon-logo.png"
+                        alt="">
+                    <p class="insidesmalltechdesc">Node JS</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage6" src="https://icon-library.com/images/nodejs-icon/nodejs-icon-1.jpg" alt="">
+                    <p class="insidesmalltechdesc">Express JS</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage7" src="https://pluspng.com/img-png/logo-mongodb-png-mongodb-logo-png-400.png"
+                        alt="">
+                    <p class="insidesmalltechdesc">Mongo DB</p>
+                </div>
+            </div>
+            <div class="smallteachcom">
+                <div class="insidesmalltech">
+                    <img id="maintechimage10"
+                        src="https://miro.medium.com/v2/resize:fit:400/1*EUQenTrIg1QMciAbTv7hNQ.png" alt="">
+                    <p class="insidesmalltechdesc">Redux</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- tech tools section starts from here -->
+
+    <h2 id="techh2">Techtools</h2>
+    <div id="techskills">
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg1" src="https://iconape.com/wp-content/png_logo_vector/visual-studio-code.png"
+                    alt="">
+                <p class="techskillsdesc">VS Code</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg2" src="https://blog.postman.com/wp-content/uploads/2018/04/logo-mark-300x300.png"
+                    alt="">
+                <p class="techskillsdesc">Postman</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg3"
+                    src="https://lh3.googleusercontent.com/proxy/RoPcmEVMBSgWrFW1o1e2zAMssiAvZHDxzHM_U2JaCEBn7r8nLUxiauFGk5Oy_Y8CJqOr0OZSJ9V3tJ_Mj4ITBJNOuwFT=s0-d"
+                    alt="">
+                <p class="techskillsdesc">Git</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg4" src="https://miro.medium.com/v2/resize:fit:600/1*p6exlg2Jrl3pimjPy7R-sA.png"
+                    alt="">
+                <p class="techskillsdesc" style="font-size: 16px;">Github Desktop</p>
+            </div>
+        </div>
+
+
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg5" src="https://assets.vercel.com/image/upload/front/favicon/round-2/180x180.png"
+                    alt="">
+                <p class="techskillsdesc">Vercel</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg6"
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3195615/code-sandbox-icon-md.png"
+                    alt="">
+                <p class="techskillsdesc">Codesandbox</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg7"
+                    src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png" alt="">
+                <p class="techskillsdesc">Netlify</p>
+            </div>
+        </div>
+        <div class="smalltechskills">
+            <div class="insidesmalltechskills">
+                <img id="techskillimg8"
+                    src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3218713/codepen-icon-md.png" alt="">
+                <p class="techskillsdesc">Codepen</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- projects section starts from here -->
+
+    <div id="projectsection">
+
+        <h2 id="projecth2">Projects</h2>
+
+        <div id="projectsec">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide1">
+                        <img src="1.png" alt="">
+                        <h2 class="swiperh2">Reliance Clone</h2>
+                        <p class="swiperdesc">Reliance Digital is a prominent Indian fashion e-commerce platform. This project introduces enhanced features, including login and signup functionality, product sorting capabilities, and 
+                            several other user-friendly additions to improve the overall shopping experience.</p>
+                        <p class="swiperdesc">Tech Stack : HTML | CSS | Javascript | React | Local Storage | Node.js | Express | MongoDB</p>
+
+                        <div class="buttons">
+                            <button onclick="git1()" class="changebutton btn1">Git Repo</button>
+                            <button onclick="live1()" class="changebutton btn1">Live View</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide2">
+                        <img src="2.png" alt="">
+                        <h2 class="swiperh2">Fitness Blender Clone</h2>
+                        <p class="swiperdesc">Developed a user-friendly platform offering free full-length workout videos 
+                            and diverse fitness routines to promote health and well-being. It includes nutritious,
+                             easy-to-follow recipes tailored for all dietary needs.</p>
+                        <p class="swiperdesc">Tech Stack : HTML | CSS | Javascript </p>
+                        <br/>
+                        <div class="buttons">
+                            <button onclick="git2()" class="changebutton btn2">Git Repo</button>
+                            <button onclick="live2()" class="changebutton btn2">Live View</button>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide slide3">
+                        <img src="3.png" alt="">
+                        <h2 class="swiperh2">Fiverr Clone</h2>
+                        <p class="swiperdesc">
+                          Fiverr is a global online marketplace that connects freelancers with buyers seeking diverse services. 
+                          It enables businesses and individuals to hire skilled professionals for 
+                          various projects.</p>
+                        <p class="swiperdesc">Tech Stack : HTML | CSS | Chakra UI | React</p>
+
+                        <div class="buttons">
+                            <button onclick="git3()" class="changebutton btn3">Git Repo</button>
+                            <button onclick="live3()" class="changebutton btn3">Live View</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- git status section starts from here -->
+
+    <h2 id="statsh2">Git Stats</h2>
+
+    <div id="statsofgit">
+        <div class="stat" style="width: 28%;">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=parthosingh&show_icons=true&locale=en&layout=compact"
+                alt="">
+        </div>
+        <div class="stat">
+            <img src="https://github-readme-stats.vercel.app/api?username=parthosingh&show_icons=true&locale=en"
+                alt="">
+        </div>
+        <div class="stat">
+            <img src="https://camo.githubusercontent.com/17080b7ac8bc29b317e2497764da2c3d336f21ea0698371310edf21f404268fb/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d636f64656f726465636f646526"
+                alt="">
+        </div>
+
+    </div>
+
+    <!-- contact section starts from here -->
+
+    <div id="contactsection">
+
+        <h2 id="contacth2">Contact Details</h2>
+        <div id="contactdiv">
+            <div class="childcon" onclick="linklinkdin()">
+                <div class="outerimage"><i style="color: #2867B2;;" class="fa-brands fa-linkedin"></i></div>
+                <p class="socialdesc">Linkdin</p>
+            </div>
+
+            <div class="childcon" onclick="linkgithub()">
+                <div class="outerimage"><i style="color: black;" class="fa-brands fa-github"></i></div>
+                <p class="socialdesc">Github</p>
+            </div>
+
+
+            <div class="childcon" onclick="linkmail()">
+                <div class="outerimage"><i style="color: red;" class="fa-solid fa-envelope"></i></div>
+                <p class="socialdesc">Email</p>
+            </div>
+
+
+            <div class="childcon" onclick="linkphone()">
+                <div class="outerimage"><i style="color: green;" class="fa-solid fa-phone"></i></div>
+                <p class="socialdesc">Phone</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer section starts from here -->
+
+    <div id="footer">
+        <div id="footerfirst">
+            <p id="footerdesc">Made With ❤️ By Partho @Masai Prepleaf</p>
+        </div>
+
+    </div>
+
+    <!-- scroll to top button section starts from here -->
+
+    <div id="slidetotop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ["Frontend Developer.", "Backend Developer.", "Full Stack Web Developer.", "MERN Stack Developer."],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+
+    });
+
+    var typed = new Typed('#element2', {
+        strings: ["Frontend Developer.", "Backend Developer.", "Full Stack Web Developer.", "MERN Stack Developer."],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+
+    });
+
+
+    var swiper = new Swiper(".mySwiper", {
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            715: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    let btn1 = document.querySelectorAll(".btn1");
+    let btn2 = document.querySelectorAll(".btn2");
+    let btn3 = document.querySelectorAll(".btn3");
+    let slide1 = document.querySelectorAll(".slide1");
+    let slide2 = document.querySelectorAll(".slide2");
+    let slide3 = document.querySelectorAll(".slide3");
+
+    for (let i = 0; i < slide1.length; i++) {
+        slide1[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < btn1.length; i++) {
+                btn1[i].style.background = "black"
+                btn1[i].style.color = "white"
+            }
+        })
+
+        slide1[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < btn1.length; i++) {
+                btn1[i].style.background = "white"
+                btn1[i].style.color = "black"
+            }
+        })
+
+        slide1[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < slide1.length; i++) {
+                slide1[i].style.background = "#8d99ae"
+                slide1[i].style.color = "white"
+                slide1[i].style.border = "1px solid black"
+            }
+        })
+
+        slide1[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < slide1.length; i++) {
+                slide1[i].style.background = "white"
+                slide1[i].style.color = "black"
+                slide1[i].style.border = "1px solid #edede9"
+            }
+        })
+    }
+
+    for (let i = 0; i < slide2.length; i++) {
+        slide2[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < btn2.length; i++) {
+                btn2[i].style.background = "black"
+                btn2[i].style.color = "white"
+            }
+        })
+
+        slide2[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < btn2.length; i++) {
+                btn2[i].style.background = "white"
+                btn2[i].style.color = "black"
+            }
+        })
+
+        slide2[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < slide2.length; i++) {
+                slide2[i].style.background = "#8d99ae"
+                slide2[i].style.color = "white"
+                slide2[i].style.border = "1px solid black"
+            }
+        })
+
+        slide2[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < slide2.length; i++) {
+                slide2[i].style.background = "white"
+                slide2[i].style.color = "black"
+                slide2[i].style.border = "1px solid #edede9"
+            }
+        })
+    }
+
+
+    for (let i = 0; i < slide3.length; i++) {
+        slide3[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < btn3.length; i++) {
+                btn3[i].style.background = "black"
+                btn3[i].style.color = "white"
+            }
+        })
+
+        slide3[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < btn3.length; i++) {
+                btn3[i].style.background = "white"
+                btn3[i].style.color = "black"
+            }
+        })
+
+        slide3[i].addEventListener("mouseover", () => {
+            for (let i = 0; i < slide3.length; i++) {
+                slide3[i].style.background = "#8d99ae"
+                slide3[i].style.color = "white"
+                slide3[i].style.border = "1px solid black"
+            }
+        })
+
+        slide3[i].addEventListener("mouseleave", () => {
+            for (let i = 0; i < slide3.length; i++) {
+                slide3[i].style.background = "white"
+                slide3[i].style.color = "black"
+                slide3[i].style.border = "1px solid #edede9"
+            }
+        })
+    }
+
+
+    function resumeNavigate() {
+        window.open("https://drive.google.com/file/d/1MDHum_a3XCji8ERi9hcVrDRcWLL_Ruxt/view?usp=sharing", "_blank");
+        ulone.style.left = "-100%"
+        cross.classList.add("none");
+        ham.classList.remove("none")
+    }
+
+    let slidetotop = document.getElementById("slidetotop");
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 250) {
+            slidetotop.style.visibility = "visible";
+        }
+        else {
+            slidetotop.style.visibility = "hidden";
+        }
+    })
+
+    slidetotop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    })
+
+    function git1() {
+        window.open("https://github.com/parthosingh/Reliance_Fullstack", "_blank");
+    }
+
+    function live1() {
+        window.open("https://reliancefullstackproject.netlify.app/", "_blank");
+    }
+
+    function git2() {
+        window.open("https://github.com/parthosingh/Fitness_Project", "_blank");
+    }
+
+    function live2() {
+        window.open("https://fitnessbuild.netlify.app/", "_blank");
+    }
+    function git3() {
+        window.open("https://github.com/parthosingh/FiverrProject", "_blank");
+    }
+
+    function live3() {
+        window.open("https://fiverreactassignment.netlify.app/", "_blank");
+    }
+
+
+    function linklinkdin() {
+        window.open("https://www.linkedin.com/in/partho-singh-68a653199/", "_blank");
+    }
+    function linkgithub() {
+        window.open("https://github.com/parthosingh", "_blank");
+    }
+    function linkmail() {
+        window.open("mailto:parthosingh792@gmail.com", "_blank");
+    }
+    function linkphone() {
+        window.open("tel:+8510814259", "_blank");
+    }
+
+    let ulone = document.getElementById("ulone");
+    let ham = document.getElementById("ham");
+    let cross = document.getElementById("cross");
+
+
+    function getlost1() {
+        if (window.innerWidth < 940) {
+            ulone.style.left = "-100%"
+            cross.classList.add("none");
+            ham.classList.remove("none")
+
+        }
+
+    }
+    function getlost2() {
+        if (window.innerWidth < 940) {
+            ulone.style.left = "-100%"
+            cross.classList.add("none");
+            ham.classList.remove("none")
+
+        }
+
+    }
+    function getlost3() {
+        if (window.innerWidth < 940) {
+            ulone.style.left = "-100%"
+            cross.classList.add("none");
+            ham.classList.remove("none")
+
+        }
+
+    }
+    function getlost4() {
+        if (window.innerWidth < 940) {
+            ulone.style.left = "-100%"
+            cross.classList.add("none");
+            ham.classList.remove("none")
+
+        }
+
+    }
+    function getlost5() {
+        if (window.innerWidth < 940) {
+            ulone.style.left = "-100%"
+            cross.classList.add("none");
+            ham.classList.remove("none")
+
+        }
+
+    }
+    function hamone() {
+        ham.classList.add("none");
+        cross.classList.remove("none")
+        ulone.style.left = "0%"
+    }
+
+
+    function crossone() {
+        cross.classList.add("none");
+        ham.classList.remove("none")
+        ulone.style.left = "-100%"
+    }
+
+</script>
